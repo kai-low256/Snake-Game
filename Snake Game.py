@@ -182,12 +182,6 @@ while True:
             pen.clear()
             pen.write(f"Score: {score}  Highest Score: {high_score}", align = "center",font = ("Courier", 24, "normal"))
 
-
     time.sleep(delay)
 
 wn.mainloop()
-
-#* What happens when screen closes (not in use)
-# turtle.Terminator = False
-
-#? .format(score,high_score)
