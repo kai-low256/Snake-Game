@@ -63,10 +63,6 @@ def go_right():
     if head.direction != "left":
         head.direction = "right"
 
-# def Pause():
-#     if head.direction != "left" or head.direction != "right" or head.direction != "up" or head.direction != "down":
-#         head.direction = "stop"
-
 def move():
     if head.direction == "up":
         y = head.ycor()
@@ -84,20 +80,12 @@ def move():
         x = head.xcor()
         head.setx(x + 22)
 
-    # Stops the the snake head (Pause)
-    if head.direction == "enter":
-        x = head.xcor()
-        y = head.ycor()
-        head.setx(x + 0 and x - 0)
-        head.sety(y + 0 and y - 0)
-
 # keyboard bindings
 wn.listen()
 wn.onkeypress(go_up, "Up")
 wn.onkeypress(go_down, "Down")
 wn.onkeypress(go_left, "Left")
 wn.onkeypress(go_right, "Right")
-wn.onkeypress("enter")
 
 # Main game loop
 while True:
